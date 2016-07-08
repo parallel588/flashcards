@@ -13,8 +13,11 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
+*.log
 /tmp
 .idea/*
 config/database.yml
 config/application.yml
 public/uploads/
+cookbooks/
+.vagrant/

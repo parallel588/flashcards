@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+cookbook 'apt'
+cookbook 'postgresql'
+cookbook 'nodejs'
+cookbook 'ruby_build'
+cookbook 'nginx'
+cookbook 'rails_rvm'
