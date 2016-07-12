@@ -2,8 +2,9 @@
 
 site 'http://community.opscode.com/api/v1'
 cookbook 'apt'
-cookbook 'postgresql'
 cookbook 'nodejs'
+cookbook 'vim'
 cookbook 'ruby_build'
-cookbook 'nginx'
-cookbook 'rails_rvm'
+cookbook 'rbenv'
+# cookbook 'nginx'
+# cookbook 'postgresql', '~> 4.0.6'
