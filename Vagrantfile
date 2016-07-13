@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "vim"
     chef.add_recipe 'ruby_build'
     # chef.add_recipe 'nginx'
-    # chef.add_recipe "postgresql"
+    chef.add_recipe "postgresql"
     chef.add_recipe "rbenv::user"
     chef.add_recipe "rbenv::vagrant"
     # Install Ruby 2.2.1 and Bundler
