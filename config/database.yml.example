@@ -1,0 +1,10 @@
+development:
+  adapter: postgresql
+  database: travis_ci_test
+  username: postgres
+  password: 1234
+test:
+  adapter: postgresql
+  database: travis_ci_test
+  username: postgres
+  password: 1234  

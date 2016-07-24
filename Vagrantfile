@@ -5,15 +5,6 @@
    system "vagrant plugin install #{plugin}" unless Vagrant.has_plugin? plugin
  end
 
-$script = <<SCRIPT
-  sudo apt-get -y update
-  cd vagrant
-  gem install rails -v 4.2.6
-  sudo -u postgres createdb --locale en_US.utf8 --encoding UTF8 --template template0 flashcards_development
-  rake db:migrate
-  rails s -p 5000
-SCRIPT
-
 Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/trusty64"
@@ -83,5 +74,5 @@ Vagrant.configure("2") do |config|
     }
   end
 
-  config.vm.provision :shell, privileged: false, inline: $script
+  config.vm.provision :shell, path: 'vagrant_scripts/after_script.sh', privileged: false
 end
